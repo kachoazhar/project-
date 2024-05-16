@@ -1,0 +1,511 @@
+.page-width {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-inline: 40px;
+}
+svg,
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+svg {
+    object-fit: contain;
+}
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ===================header section start here========================= */
+.header {
+    padding-block: 12px;
+    background-color: #ddbb5b40;
+}
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .wrapper .logo {
+    max-width: 110px;
+}
+header .link-list {
+    display: flex;
+    align-items: center;
+}
+header .header_social-links {
+    display: flex;
+    align-items: center;
+    margin-inline: -10px;
+}
+header .link-item {
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1;
+    text-transform: capitalize;
+    padding: 8px;
+    color: #000;
+}
+header .social-text {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1;
+    text-transform: capitalize;
+    display: block;
+    color: #000;
+}
+header .social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10px;
+}
+header .social-link .icon {
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+/* ===================header section end here========================= */
+
+
+
+.popup {
+	max-width: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: fixed;
+    background-color: aquamarine;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.overly-popup {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.grid .grid-item {
+    display: none;
+}
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: aqua;
+    box-shadow: 2px 2px 2px #098029;
+    overflow: hidden;
+    padding: 12px 20px;
+}
+.calculator .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.calculator .calc-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f7d60a;
+    background: transparent;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+}
+.calculator .calc-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.calculator .calc-btn {
+    max-width: 60px;
+    flex: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 8px 10px;
+    background-color: aquamarine;
+    color: #ffff;
+    font-size: 30px;
+    font-family: tohoma;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product-quantity .input-holder{
+    max-width: 40px;
+    flex: 40px;
+    aspect-ratio: 1;
+    border: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.product-quantity .input-holder[type="number"]::-webkit-inner-spin-button,
+.product-quantity .input-holder[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+.product-quantity .input-holder:focus-visible {
+    outline: none;
+}
+.product-quantity {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.product-quantity .button {
+    max-width: 40px;
+    flex: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: red;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cart-ion {
+    max-width: 400px;
+    text-align: center;
+    font-size: 40px;
+    font-family: tahoma;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.clock {
+    max-width: 37vw;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 10px double #969385;
+    height: 37vw;
+    background-color: rgb(51, 19, 127);
+    position: relative;
+}
+.clock-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 12px dotted #ffdd00;
+    border-radius: 50%;
+}
+.clock .clock-item {
+    font-size: 30px;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.clock .clock-item:nth-child(1) {
+    position: absolute;
+    top: 4vw;
+    right: 7vw;
+}
+.clock .clock-item:nth-child(2) {
+    position: absolute;
+    top: 11vw;
+    right: 2vw;
+}
+.clock .clock-item:nth-child(3) {
+    position: absolute;
+    top: 19vw;
+    right: 2vw;
+}
+.clock .clock-item:nth-child(4) {
+    position: absolute;
+    top: 26vw;
+    right: 5vw;
+}
+.clock .clock-item:nth-child(5) {
+    position: absolute;
+    top: 30vw;
+    right: 10vw;
+}
+.clock .clock-item:nth-child(6) {
+    position: absolute;
+    left: 17vw;
+    bottom: 0;
+}
+.clock .clock-item:nth-child(7) {
+    position: absolute;
+    top: 30vw;
+    left: 10vw;
+}
+.clock .clock-item:nth-child(8) {
+    position: absolute;
+    top: 26vw;
+    left: 5vw;
+}
+.clock .clock-item:nth-child(9) {
+    position: absolute;
+    top: 19vw;
+    left: 2vw;
+}
+.clock .clock-item:nth-child(10) {
+    position: absolute;
+    top: 11vw;
+    left: 2vw;
+}
+.clock .clock-item:nth-child(11) {
+    position: absolute;
+    top: 4vw;
+    left: 7vw;
+}
+.clock .clock-item:nth-child(12) {
+    position: absolute;
+    left: 17vw;
+    top: 0;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    z-index: 2;
+}
+.clock .clock-stick {
+    position: absolute;
+    width: 100%;
+}
+.clock-stick.hour::after,
+.clock-stick.minus::after,
+.clock-stick.second::after {
+    content: '';
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+    position: absolute;
+    background: rgb(250, 192, 0);
+    border-radius: 60px;
+}
+.clock-stick.second::after {
+    background: rgb(255, 255, 255);
+}
+.clock-stick.minus::after {
+    background: rgb(73, 3, 3);
+}
+.clock-stick.minus {
+    max-width: 32vw;
+    height: 10px;
+    animation: secondAnimation;
+    animation-duration: 1200s;
+    animation-iteration-count: infinite;
+}
+.clock-stick.second {
+    max-width: 34vw;
+    height: 6px;
+    animation: secondAnimation;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+.clock-stick.hour {
+    height: 12px;
+    max-width: 30vw;
+    animation: secondAnimation;
+    animation-duration: 2000s;
+    animation-iteration-count: infinite;
+}
+@keyframes secondAnimation {
+    from  {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.wall-clock {
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    background-color: #ffdd00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wall-clock::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #098029;
+    border-radius: 50%;
+}
+.wall-clock .wall-clock-item {
+    --rotate: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotate));
+    color: #fff;
+}
+.wall-clock .wall-clock-item.numer1 {
+    --rotate: 30deg;
+}
+.wall-clock .wall-clock-item.numer2 {
+    --rotate: 60deg;
+}
+.wall-clock .wall-clock-item.numer3 {
+    --rotate: 90deg;
+}
+.wall-clock .wall-clock-item.numer4 {
+    --rotate: 1200deg;
+}
+.wall-clock .wall-clock-item.numer5 {
+    --rotate: 150deg;
+}
+.wall-clock .wall-clock-item.numer6 {
+    --rotate: 180deg;
+}
+.wall-clock .wall-clock-item.numer7 {
+    --rotate: 210deg;
+}
+.wall-clock .wall-clock-item.numer8 {
+    --rotate: 240deg;
+}
+.wall-clock .wall-clock-item.numer9 {
+    --rotate: 270deg;
+}
+.wall-clock .wall-clock-item.numer10 {
+    --rotate: 300deg;
+}
+.wall-clock .wall-clock-item.numer11 {
+    --rotate: 330deg;
+}
+.wall-clock .wall-clock-item.numer12 {
+    --rotate: 360deg;
+}
+.wall-clock .clock-hand {
+    --rotation:0deg;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(var(--rotation));
+    transform-origin: bottom;
+}
+.wall-clock .clock-hand.second {
+    width: 4px;
+    background-color: red;
+    height: 45%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.wall-clock .clock-hand.minute {
+    width: 7px;
+    background-color: #098029;
+    height: 40%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.wall-clock .clock-hand.hour {
+    width: 7px;
+    height: 45%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #800909;
+}
+.tabs {
+    max-width: fit-content;
+}
+.tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+.tab-btn .icon {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    transform: rotate(360deg);
+    transition: all .01s ease-in-out;
+}
+.tab-btn .icon.active {
+    transform: rotate(180deg);
+}
+.tabs .tab-content {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transition: all .5s ease-in-out;
+}
+.tabs .tab-content.active  {
+    padding-top: 30px;
+    opacity: 1;
+    display: block;
+}
+
+
+/* =================== sorting ===================== */
+.sorting {
+    position: relative;
+    max-width: 400px;
+}
+.head-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sorting-inner {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out;
+}
+.sorting.active .sorting-inner {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.sortingitem {
+    list-style: none;
+}
+.sorting-head {
+    width: 400px;
+    height: 30px;
+    display: block;
+}

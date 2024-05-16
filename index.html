@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git second project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="page-width">
+            <div class="wrapper">
+                <a href="./index.html" class="logo-link">
+                    <div class="logo">
+                        <img src="./image/North-JS.png" alt="">
+                    </div>
+                </a>
+                <div class="nav-bar">
+                    <ul class="link-list">
+                        <li class="list-item">
+                            <a href="./index.html" class="link-item">home</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./index.html" class="link-item">about</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./index.html" class="link-item">services</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./index.html" class="link-item">contact us</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./index.html" class="link-item">about us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_social-links">
+                    <a href="" class="social-link">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="social-text">facebook</span>
+                    </a>
+                    <a href="" class="social-link">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 64 64">
+                                <path
+                                    d="M 31.820312 12 C 13.439312 12 12 13.439312 12 31.820312 L 12 32.179688 C 12 50.560688 13.439312 52 31.820312 52 L 32.179688 52 C 50.560688 52 52 50.560688 52 32.179688 L 52 32 C 52 13.452 50.548 12 32 12 L 31.820312 12 z M 28 16 L 36 16 C 47.129 16 48 16.871 48 28 L 48 36 C 48 47.129 47.129 48 36 48 L 28 48 C 16.871 48 16 47.129 16 36 L 16 28 C 16 16.871 16.871 16 28 16 z M 41.994141 20 C 40.889141 20.003 39.997 20.900859 40 22.005859 C 40.003 23.110859 40.900859 24.003 42.005859 24 C 43.110859 23.997 44.003 23.099141 44 21.994141 C 43.997 20.889141 43.099141 19.997 41.994141 20 z M 31.976562 22 C 26.454563 22.013 21.987 26.501437 22 32.023438 C 22.013 37.545437 26.501437 42.013 32.023438 42 C 37.545437 41.987 42.013 37.498562 42 31.976562 C 41.987 26.454563 37.498562 21.987 31.976562 22 z M 31.986328 26 C 35.299328 25.992 37.992 28.673328 38 31.986328 C 38.007 35.299328 35.326672 37.992 32.013672 38 C 28.700672 38.008 26.008 35.327672 26 32.013672 C 25.992 28.700672 28.673328 26.008 31.986328 26 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="social-text">instagram</span>
+                    </a>
+                    <a href="" class="social-link">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="social-text">twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="quantity" js-quantity>
+        <div class="wrapper">
+            <button class="q-btn" js-minus>-</button>
+            <span class="value" js-value data-count="0">0</span>
+            <button class="q-btn" js-plus>+</button>
+        </div>
+    </div>
+    <div class="overly-popup" js-overly></div>
+    <div class="popup" js-popup>
+        <div class="popup-inner">
+            <h2 class="title">popup title</h2>
+            <div class="description">
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione totam, natus commodi id, numquam
+                    maiores corporis eos dolorum aliquid odit sunt? Deserunt repellendus incidunt, perspiciatis illo
+                    culpa fugiat asperiores tenetur?
+                </span>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione totam, natus commodi id, numquam
+                    maiores corporis eos dolo?
+                </span>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione totam, natus commodi id, numquam
+                    maiores corporis eostenetur?
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="pagenation " js-pagenation>
+        <div class="page-width">
+            <div class="pagenation-wrapper">
+                <div class="grid" js-grid>
+
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #1</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #2</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #3</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #4</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #5</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #6</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #7</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #8</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #9</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                    <div class="grid-item" js-grid-item>
+                        <h2>Product No #10</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos at ratione. At
+                            ducimus quaerat beatae, quam praesentium culpa corrupti enim ad commodi. A nemo eligendi
+                            vero reprehenderit architecto eaque, adipisci nulla! Mollitia molestiae quibusdam
+                            laudantium. Ut numquam molestias accusamus minus rerum asperiores similique libero
+                            reprehenderit laudantium nihil neque rem, itaque voluptate deserunt velit maxime ea quaerat
+                            quia voluptatem eos quisquam sed ipsum. Temporibus in totam mollitia debitis illum aliquid
+                            velit, cupiditate est fuga assumenda! Omnis iure iusto placeat magnam! Eos maiores delectus
+                            laboriosam dolore, alias totam commodi quasi blanditiis suscipit tenetur. Ipsam eos totam
+                            soluta, obcaecati nobis laudantium. Ea quis sequi excepturi vitae provident! Enim mollitia
+                            nobis explicabo maxime dolorem? Eligendi non cupiditate et accusamus nesciunt vel.
+                            Beataequisquam ipsa aperiam pariatur!
+                        </span>
+                    </div>
+                </div>
+                <button class="show-more" js-show-more>show more</button>
+            </div>
+        </div>
+    </div>
+    <div class="product_page">
+        <div class="product_wrapper">
+            <div class="product_grid">
+                <div class="product_sub-wrapper">
+                    <div class="variant_wrapper">
+                        <input type="radio" name="large">
+                        <label class="variant" for="large">large</label>
+                    </div>
+                    <div class="variant_wrapper">
+                        <input type="radio" name="small">
+                        <label class="variant" for="small">small</label>
+                    </div>
+                    <div class="variant_wrapper">
+                        <input type="radio" name="medium">
+                        <label class="variant" for="medium">medium</label>
+                    </div>
+                    <div class="variant_wrapper">
+                        <input type="radio" name="red">
+                        <label class="variant" for="red">red</label>
+                    </div>
+                    <div class="variant_wrapper">
+                        <input type="radio" name="green">
+                        <label class="variant" for="green">green</label>
+                    </div>
+                    <div class="variant_wrapper">
+                        <input type="radio" name="yellow">
+                        <label class="variant" for="yellow">yellow</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculator" js-calculater>
+        <div class="page-with">
+            <div class="wrapper">
+                <input name="" id="" readonly class="calc-input" js-calc-input>
+                <div class="calc-buttons">
+                    <button class="calc-btn" js-calc-button>-</button>
+                    <button class="calc-btn" js-calc-button>+</button>
+                    <button class="calc-btn" js-calc-button>*</button>
+                    <button class="calc-btn" js-calc-button>0</button>
+                    <button class="calc-btn" js-calc-button>9</button>
+                    <button class="calc-btn" js-calc-button>8</button>
+                    <button class="calc-btn" js-calc-button>7</button>
+                    <button class="calc-btn" js-calc-button>6</button>
+                    <button class="calc-btn" js-calc-button>5</button>
+                    <button class="calc-btn" js-calc-button>4</button>
+                    <button class="calc-btn" js-calc-button>3</button>
+                    <button class="calc-btn" js-calc-button>2</button>
+                    <button class="calc-btn" js-calc-button>1</button>
+                    <button class="calc-btn" js-calc-button>.</button>
+                    <button class="calc-btn" js-calc-button>=</button>
+                    <button class="calc-btn" js-calc-button>c</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search_input" js-search-box>
+        <input type="text" js-search-input>
+        <div class="search_box">
+            <li class="furit-item" js-furit-item>mango</li>
+            <li class="furit-item" js-furit-item>apple</li>
+            <li class="furit-item" js-furit-item>banana</li>
+        </div>
+    </div>
+    <div class="product-quantity" js-quantity-second>
+        <button class="button" js-plus>+</button>
+        <input type="number" js-quantity-text value="0" readonly class="input-holder">
+        <button class="button" js-minus>-</button>
+    </div>
+    <div class="product" js-product>
+        <div class="product-wrapper">
+            <div class="product-items" js-product-item>1</div>
+            <div class="product-items" js-product-item>2</div>
+            <div class="product-items" js-product-item>3</div>
+            <div class="product-items" js-product-item>4</div>
+            <div class="product-items" js-product-item>5</div>
+            <div class="product-items" js-product-item>5</div>
+        </div>
+        <div class="add-to-cart" js-cart-btn>add your cart</div>
+    </div>
+    <!-- <div class="cart-ion" js-cart-drawer>cartIcon</div> -->
+    <div class="clock">
+        <div class="clock-wrapper">
+            <li class="clock-item">1</li>
+            <li class="clock-item">2</li>
+            <li class="clock-item">3</li>
+            <li class="clock-item">4</li>
+            <li class="clock-item">5</li>
+            <li class="clock-item">6</li>
+            <li class="clock-item">7</li>
+            <li class="clock-item">8</li>
+            <li class="clock-item">9</li>
+            <li class="clock-item">10</li>
+            <li class="clock-item">11</li>
+            <li class="clock-item">12</li>
+            <div class="circle"></div>
+            <div class="clock-stick hour"></div>
+            <div class="clock-stick minus"></div>
+            <div class="clock-stick second"></div>
+        </div>
+    </div>
+    <div class="wall-clock" js-clock>
+        <div class="clock-hand hour" js-clock-hour></div>
+        <div class="clock-hand minute" js-clock-minute></div>
+        <div class="clock-hand second" js-clock-second></div>
+        <div class="wall-clock-item numer1">1</div>
+        <div class="wall-clock-item numer2">2</div>
+        <div class="wall-clock-item numer3">3</div>
+        <div class="wall-clock-item numer4">4</div>
+        <div class="wall-clock-item numer5">5</div>
+        <div class="wall-clock-item numer6">6</div>
+        <div class="wall-clock-item numer7">7</div>
+        <div class="wall-clock-item numer8">8</div>
+        <div class="wall-clock-item numer9">9</div>
+        <div class="wall-clock-item numer10">10</div>
+        <div class="wall-clock-item numer11">11</div>
+        <div class="wall-clock-item numer12">12</div>
+    </div>
+
+    <div class="book-conter" js-book-block>
+        <input type="text" js-input-render>
+        <div class="book" js-book>
+            <h2 class="auther-name">rustam</h2>
+            <h2 class="book-title">bio</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">karim</h2>
+            <h2 class="book-title">physics</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">wazir</h2>
+            <h2 class="book-title">chemistery</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">musa</h2>
+            <h2 class="book-title">urdu</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">ali</h2>
+            <h2 class="book-title">english</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">iqbal</h2>
+            <h2 class="book-title">math</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">mtali</h2>
+            <h2 class="book-title">secince</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">hussain</h2>
+            <h2 class="book-title">java</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">herry</h2>
+            <h2 class="book-title">html</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">yahoo</h2>
+            <h2 class="book-title">css</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">ifti</h2>
+            <h2 class="book-title">islaimat</h2>
+        </div>
+        <div class="book" js-book>
+            <h2 class="auther-name">abbas</h2>
+            <h2 class="book-title">arabee</h2>
+        </div>
+    </div>
+    <div class="tabs" js-tab>
+        <div class="tab-btn" js-tab-button>
+            <span class="btn-text">button1</span>
+            <span class="icon" js-tab-icon>^</span>
+        </div>
+        <span class="tab-content" js-tab-conten>
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            dolores!
+        </span>
+        <div class="tab-btn" js-tab-button>
+            <span class="btn-text">button2</span>
+            <span class="icon" js-tab-icon>^</span>
+        </div>
+        <span class="tab-content" js-tab-conten>
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            dolores!
+        </span>
+        <div class="tab-btn" js-tab-button>
+            <span class="btn-text">button3</span>
+            <span class="icon" js-tab-icon>^</span>
+        </div>
+        <span class="tab-content" js-tab-conten>
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            dolores!
+        </span>
+        <div class="tab-btn" js-tab-button>
+            <span class="btn-text">button4</span>
+            <span class="icon" js-tab-icon>^</span>
+        </div>
+        <span class="tab-content" js-tab-conten>
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            dolores!
+        </span>
+        <div class="tab-btn" js-tab-button>
+            <span class="btn-text">button5</span>
+            <span class="icon" js-tab-icon>^</span>
+        </div>
+        <span class="tab-content" js-tab-conten>
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            dolores!
+        </span>
+        <div class="tab-btn" js-tab-button>
+            <span class="btn-text">button6</span>
+            <span class="icon" js-tab-icon>^</span>
+        </div>
+        <span class="tab-content" js-tab-conten>
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            similique in tenetur optio nesciunt, corporis voluptate delectus facilis ea porro, dignissimos eaque sed
+            dolores!
+        </span>
+    </div>
+
+
+
+    <!-- <section class="cart-drawer" id="cartDrawer" js-cart-section>
+        <div id="CartDrawer-Overlay"></div>
+        <div class="empty-cart"></div>
+        <div class="cart-items">
+            <h3>title</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam possimus est autem,
+                sapiente perferendis nobis nulla, illum molestias suscipit voluptatibus at excepturi inventore iusto
+                voluptate provident tenetur ipsum eius.</span>
+            <div class="image">this is image</div>
+        </div>
+    </section> -->
+    <sorting-collection>
+        <div class="sorting" js-sorting>
+            <div class="head-wrapper">
+                <div class="sorting-head" js-head-sorting>
+                </div>
+                <div class="icon" style="width: 20px; height: 20px; background-color: brown;"></div>
+            </div>
+            <div class="sorting-inner">
+                <li class="sortingitem" js-sorting-item aria-selected="">featured</li>
+                <li class="sortingitem" js-sorting-item aria-selected="">manually </li>
+                <li class="sortingitem" js-sorting-item aria-selected="">ascending order</li>
+                <li class="sortingitem" js-sorting-item aria-selected="">descending order</li>
+                <li class="sortingitem" js-sorting-item aria-selected="">alphabetical order a to z</li>
+                <li class="sortingitem" js-sorting-item aria-selected="">alphabetical order z to a</li>
+                <li class="sortingitem" js-sorting-item aria-selected="">price high to low</li>
+                <li class="sortingitem" js-sorting-item aria-selected="">price low to high</li>
+            </div>
+        </div>
+    </sorting-collection>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
